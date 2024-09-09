@@ -156,8 +156,6 @@
 }
 
 .recipes__videos {
-  padding-left: auto;
-  padding-right: auto;
   padding-top: 80px;
   padding-bottom: 215px;
   display: flex;
