@@ -98,7 +98,7 @@
   box-sizing: content-box;
 }
 
-.header__footer {
+.footer {
   display: flex;
   margin-top: auto;
   justify-content: space-between;
@@ -114,11 +114,11 @@
   margin-bottom: 40px;
 }
 
-.header__footer-content-hour {
+.footer__content-hour {
   margin: 0;
 }
 
-.header__footer-adress {
+.footer__adress {
   align-content: end;
   margin: 0;
 }
