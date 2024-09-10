@@ -63,7 +63,7 @@
   letter-spacing: -1px;
 }
 
-.span-accent {
+.header__span-accent {
   display: block;
   font-family: "Noto Serif";
   font-style: italic;
@@ -95,24 +95,19 @@
   box-sizing: content-box;
 }
 
-.footer {
+.header__footer {
   display: flex;
-  margin-top: auto;
-  justify-content: space-between;
-
+  flex-direction: column;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
+  margin-top: auto;
   margin-left: 80px;
   margin-right: 80px;
   margin-bottom: 40px;
-}
-
-.header__footer {
-  margin-top: auto;
 }
 
 .header__paragraph {
