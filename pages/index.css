@@ -97,7 +97,7 @@
 
 .header__footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -112,6 +112,7 @@
 
 .header__paragraph {
   margin: 0;
+  align-content: end;
 }
 
 .recipes {
