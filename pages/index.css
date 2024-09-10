@@ -14,6 +14,9 @@
   background-color: #ffffff;
   background-image: url(/web_project_coffeeshop/images/background_header.svg);
   background-size: cover;
+  margin: 0;
+  min-height: 720px;
+  max-height: 800px;
 }
 
 .nav {
@@ -45,12 +48,6 @@
 .nav__link {
   color: black;
   text-decoration: none;
-}
-
-.header__content {
-  margin: 0;
-  min-height: 720px;
-  max-height: 800px;
 }
 
 .header__title {
@@ -114,12 +111,11 @@
   margin-bottom: 40px;
 }
 
-.footer__content-hour {
-  margin: 0;
+.header__footer {
+  margin-top: auto;
 }
 
-.footer__adress {
-  align-content: end;
+.header__paragraph {
   margin: 0;
 }
 
