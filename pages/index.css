@@ -79,6 +79,7 @@
   margin: 0;
   padding-left: 80px;
   padding-top: 28px;
+  padding-bottom: 0;
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: normal;
@@ -91,13 +92,14 @@
   top: 124px;
   right: 5px;
   height: 568px;
-  width: 626px;
-  box-sizing: content-box;
+  width: 646px;
 }
 
 .header__footer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -108,7 +110,6 @@
   margin-left: 80px;
   margin-right: 80px;
   margin-bottom: 40px;
-  box-sizing: border-box;
 }
 
 .header__paragraph {
