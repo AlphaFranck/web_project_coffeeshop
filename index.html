@@ -127,7 +127,7 @@
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
-          <form class="reservation__form">
+          <form class="reservation__form reservation__input-container">
             <fieldset class="reservation__input-container">
               <label class="reservation__label" for="name">Nombre * </label>
               <input
@@ -172,7 +172,11 @@
                 for="acept"
               >
                 Acepto los terminos de uso
-                <input type="checkbox" class="reservation__checkbox" />
+                <input
+                  type="checkbox"
+                  class="reservation__checkbox"
+                  id="acept"
+                />
               </label>
             </fieldset>
           </form>
