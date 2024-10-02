@@ -16,7 +16,6 @@
     />
     <title>Cafeteria Doddo</title>
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,7 +41,7 @@
               <a class="nav__link" href="#reservation">Reservar una mesa</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Contactos</a>
+              <a class="nav__link" href="#footer">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -128,61 +127,92 @@
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
           <form class="form reservation__form">
-            <fieldset class="reservation__input-container">
-              <label class="reservation__label" for="name">Nombre * </label>
+            <fieldset class="form__input-container">
+              <label class="form__label" for="name">Nombre * </label>
               <input
                 type="text"
-                class="reservation__item"
+                class="form__item"
                 placeholder="Nombre"
                 id="name"
+                required
               />
-              <label class="reservation__label" for="commensal"
+              <label class="form__label" for="commensal"
                 >Número de comensales *
               </label>
               <input
                 type="number"
                 min="1"
                 max="8"
-                class="reservation__item"
+                class="form__item"
                 placeholder="1-8"
                 id="commensal"
+                required
               />
-              <label class="reservation__label" for="date"
-                >Fecha y hora *
-              </label>
+              <label class="form__label" for="date">Fecha y hora * </label>
               <input
                 type="datetime-local"
-                class="reservation__item"
+                class="form__item"
                 id="date"
+                required
               />
-              <label class="reservation__label" for="email"
+              <label class="form__label" for="email"
                 >Tu correo electrónico *
               </label>
               <input
                 type="email"
-                class="reservation__item"
+                class="form__item"
                 id="email"
                 placeholder="email@email.com"
+                required
               />
-              <button type="submit" class="reservation__button">
+              <button type="submit" class="form__button">
                 Reservar una mesa
               </button>
-              <label
-                class="reservation__label reservation__label_order"
-                for="acept"
-              >
+              <label class="form__label form__label_order" for="acept">
                 Acepto los terminos de uso
                 <input
                   type="checkbox"
-                  class="reservation__checkbox"
+                  class="form__checkbox"
                   id="acept"
+                  required
                 />
               </label>
             </fieldset>
           </form>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer">
+        <section class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Logo de Coffeeshop"
+            class="footer__logo"
+          />
+          <div class="footer__circle"></div>
+          <div class="footer__social">
+            <h2 class="footer__social-heading">Redes sociales</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="Logo de Facebook"
+                  class="footer__social-icon"
+                />
+                <a class="footer__social-link" href="#">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="Logo de instagram"
+                  class="footer__social-icon"
+                />
+                <a class="footer__social-link" href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <p class="footer__copyright">© 2024 Francisco Landa Marquez</p>
+      </footer>
     </div>
   </body>
 </html>
